@@ -51,7 +51,8 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      "rust_analyzer"
+      "rust_analyzer",
+      "gopls"
     },
     setup_handlers = {
       -- add custom handler
