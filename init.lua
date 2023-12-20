@@ -87,6 +87,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-    vim.wo.signcolumn = "yes"
   end,
 }
