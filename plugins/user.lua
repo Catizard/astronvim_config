@@ -13,7 +13,16 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    flavour = "latte",
-    transparent_background = true
+    config = function() 
+      require("catppuccin").setup()
+    end
+  },
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("todo-comments").setup()
+    end
   }
 }
