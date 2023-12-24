@@ -24,5 +24,6 @@ return {
     config = function()
       require("todo-comments").setup()
     end
-  }
+  },
+  { "jose-elias-alvarez/typescript.nvim" }
 }
