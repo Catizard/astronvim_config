@@ -56,6 +56,12 @@ return {
       end,
       desc = "clean all marks in local buffer",
     },
+    ["<leader>ma"] = {
+      function ()
+        require('telescope').extensions.bookmarks.list()
+      end,
+      desc = "show bookmarks list in telescope"
+    }
   },
   t = {
     -- setting a mapping to false will disable it

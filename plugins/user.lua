@@ -29,7 +29,14 @@ return {
   {
     "tomasky/bookmarks.nvim",
     config = function ()
-      require("bookmarks").setup()
+      require("bookmarks").setup {
+        keywords = {
+          ["@n"] = "󱞁",
+          ["@w"] = "",
+          ["@f"] = "󰧻"
+        },
+        sign_priority = 8, -- override other signs
+      }
     end
   },
   { "lewis6991/gitsigns.nvim" },
