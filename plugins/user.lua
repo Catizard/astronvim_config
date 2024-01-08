@@ -25,5 +25,12 @@ return {
       require("todo-comments").setup()
     end
   },
-  { "jose-elias-alvarez/typescript.nvim" }
+  { "jose-elias-alvarez/typescript.nvim" },
+  {
+    "tomasky/bookmarks.nvim",
+    config = function ()
+      require("bookmarks").setup()
+    end
+  },
+  { "lewis6991/gitsigns.nvim" },
 }
