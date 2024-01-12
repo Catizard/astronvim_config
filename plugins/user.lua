@@ -40,4 +40,11 @@ return {
     end
   },
   { "lewis6991/gitsigns.nvim" },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = {
+      "nvim-lua/plenary.nvim"
+    }
+  }
 }
