@@ -13,7 +13,7 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    config = function() 
+    config = function()
       require("catppuccin").setup()
     end
   },
@@ -40,11 +40,4 @@ return {
     end
   },
   { "lewis6991/gitsigns.nvim" },
-  {
-    "ThePrimeagen/harpoon",
-    branch = "harpoon2",
-    dependencies = {
-      "nvim-lua/plenary.nvim"
-    }
-  }
 }
